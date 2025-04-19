@@ -11,7 +11,7 @@ class MyGame extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'White Gold Rose',
+      title: 'White-Gold Rose',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),

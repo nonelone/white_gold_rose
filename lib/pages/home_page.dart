@@ -1,4 +1,6 @@
+import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
+import 'package:white_gold_rose/pages/game_page.dart';
 import 'dart:async';
 
 import 'package:white_gold_rose/ui/info_dialog.dart';
@@ -79,6 +81,10 @@ class _GameHomePageState extends State<GameHomePage> {
                 child: SizedBox(
                   height: MediaQuery.of(context).size.height / 1.2,
                   width: MediaQuery.of(context).size.height / 1.2,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8),
+                    child: GameWidget(game: theGame),
+                  ),
                 ),
               ),
             ),
