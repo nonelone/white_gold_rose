@@ -64,8 +64,13 @@ class _GameHomePageState extends State<GameHomePage> {
           alignment: Alignment.center,
           fit: StackFit.expand,
           children: [
-            Center(
-              child: Image.asset("assets/background.png", fit: BoxFit.fill),
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/background.png"),
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
             Center(
               child: Card(
