@@ -1,0 +1,24 @@
+name: white_gold_rose
+description: "White Gold Rose - a game made for Flame Jam 2025."
+publish_to: "none" # Do not publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
