@@ -43,12 +43,20 @@ class _GameHomePageState extends State<GameHomePage> {
             child: FloatingActionButton(
               onPressed: () => _dialogBuilder(context, "Tutorial"),
               tooltip: 'How To Play',
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                side: BorderSide(width: 4, color: Color(0xff230f46)),
+              ),
               child: const Icon(Icons.videogame_asset, size: 32),
             ),
           ),
           FloatingActionButton(
             onPressed: () => _dialogBuilder(context, "About"),
             tooltip: 'About The Game',
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(16.0)),
+              side: BorderSide(width: 4, color: Color(0xff230f46)),
+            ),
             child: const Icon(Icons.info, size: 32),
           ),
           Padding(
@@ -56,6 +64,10 @@ class _GameHomePageState extends State<GameHomePage> {
             child: FloatingActionButton(
               onPressed: () => _dialogBuilder(context, "Settings"),
               tooltip: 'Settings',
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                side: BorderSide(width: 4, color: Color(0xff230f46)),
+              ),
               child: const Icon(Icons.settings, size: 32),
             ),
           ),
@@ -76,9 +88,13 @@ class _GameHomePageState extends State<GameHomePage> {
             ),
             Center(
               child: Card(
-                shadowColor: Color(0xffbcf0b4),
-                color: Color(0xffbcf0b4),
+                shadowColor: Color(0xffebddff),
+                color: Color(0xffebddff),
                 elevation: 32,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                  side: BorderSide(width: 4, color: Color(0xff230f46)),
+                ),
                 child: SizedBox(
                   height: MediaQuery.of(context).size.height / 1.3,
                   width: MediaQuery.of(context).size.height / 1.3,

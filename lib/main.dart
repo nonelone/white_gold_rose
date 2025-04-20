@@ -13,7 +13,7 @@ class MyGame extends StatelessWidget {
     return MaterialApp(
       title: 'White-Gold Rose',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const GameHomePage(),
     );
