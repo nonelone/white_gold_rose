@@ -76,14 +76,15 @@ class _GameHomePageState extends State<GameHomePage> {
             ),
             Center(
               child: Card(
-                shadowColor: Colors.white,
+                shadowColor: Color(0xffbcf0b4),
+                color: Color(0xffbcf0b4),
                 elevation: 32,
                 child: SizedBox(
-                  height: MediaQuery.of(context).size.height / 1.2,
-                  width: MediaQuery.of(context).size.height / 1.2,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8),
-                    child: GameWidget(game: theGame),
+                  height: MediaQuery.of(context).size.height / 1.3,
+                  width: MediaQuery.of(context).size.height / 1.3,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: TheGameWidget(),
                   ),
                 ),
               ),
